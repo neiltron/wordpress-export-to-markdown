@@ -108,7 +108,7 @@ function getPostSlug(post) {
 
 function getFrontmatterSlug(post) {
 	const url = new URL(post.link[0]);
-	return decodeURIComponent(url.pathname.replace(/\//g, ''));
+	return decodeURIComponent(url.pathname);
 }
 
 function getPostCoverImageId(post) {
